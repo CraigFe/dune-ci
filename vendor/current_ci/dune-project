@@ -1,0 +1,17 @@
+(lang dune 2.0)
+(name current_ci)
+(implicit_transitive_deps false)
+
+(generate_opam_files true)
+(source (github CraigFe/current-ci))
+(maintainers "Craig Ferguson <me@craigfe.io>")
+(authors "Craig Ferguson <me@craigfe.io>")
+
+(package
+ (name current_ci)
+ (synopsis "Toolkit for building CI pipelines with OCurrent")
+ (description "\
+Toolkit for building CI pipelines with OCurrent
+")
+ (documentation https://CraigFe.github.io/current-ci/)
+ (depends alcotest fmt logs))

@@ -1,0 +1,11 @@
+(rule
+ (targets dune-ci-help.txt.gen)
+ (action
+  (with-stdout-to
+   %{targets}
+   (run dune-ci --help=plain))))
+
+(rule
+ (alias runtest)
+ (action
+  (diff dune-ci-help.txt dune-ci-help.txt.gen)))

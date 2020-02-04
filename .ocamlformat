@@ -1,0 +1,4 @@
+version = 0.12-62-g7b58536
+break-infix = fit-or-vertical
+break-infix-before-func = true
+parse-docstrings = true

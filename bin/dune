@@ -1,0 +1,9 @@
+(executable
+ (name main)
+ (libraries cmdliner dune-ci current_ci fmt fmt.cli fmt.tty logs logs.cli
+   logs.fmt))
+
+(install
+ (section bin)
+ (files
+  (main.exe as dune-ci)))

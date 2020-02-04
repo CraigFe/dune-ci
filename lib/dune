@@ -1,0 +1,5 @@
+(library
+ (name dune_ci)
+ (public_name dune-ci)
+ (libraries logs current current_ci current.cache current_docker current_git
+   current_github duration))

@@ -1,0 +1,4 @@
+(library
+ (name current_ci)
+ (public_name current_ci)
+ (libraries duration re logs logs.cli logs.fmt fpath dockerfile cmdliner current current.cache current_docker current_git current_github current_web prometheus lwt lwt.unix fmt fmt.cli fmt.tty))
